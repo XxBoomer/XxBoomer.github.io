@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-git.min.js"></script>
+</head>
+
+<body>
+  <!-- NAV MENU -->
+  <nav class="navbar is-primary is-active" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu" id="navmenu">
+      <div class="navbar-start">
+        <a href="https://xxboomer.github.io/MuSe/" class="navbar-item">Home</a>
+        <a href="members.html" class="navbar-item">My Profile</a>
+      </div>
+    </div>
+  </nav>
+  <div class="notification is-danger is-light">
+    <button class="delete"></button>
+    You must login to view profile !
+  </div>
+
+  <!-- LOGIN FORM -->
+  <div class="section login-form">
+    <div class="level-item">
+      <div class="section">
+        <form class="login formBdr">
+          <h2 class="level-item logTitle title">Log in</h2>
+          <div class="form-group">
+
+            <label class="level-item"></label>
+            <input type="email" class="form-control input is-primary subtitle" id="email-input" placeholder="Email"
+              required="required">
+          </div>
+          <div class="form-group">
+            <label class="level-item"></label>
+            <input type="password" class="form-control input is-primary subtitle" id="password-input"
+              placeholder="Password" required="required">
+          </div>
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+          <button type="submit" class="btn button is-primary level-item is-medium is-rounded is-fullwidth"
+            id="loginBtn">Log
+            in</button>
+        </form>
+        <p class="level-item subtitle"><a class="formLink" href="signup.html">Tạo Account</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <a href="#">Muse® </a> Copyright © 2020 XxBoomer
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

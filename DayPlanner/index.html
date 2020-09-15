@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Day Planner</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+      <h1 class="display-4">Lên Lịch 1 Ngày</h1>
+      <p class="lead">Đây là một công cụ lập kế hoạch đơn giản giúp bạn sắp xếp thời gian cho các công việc hàng ngày của mình.</p>
+      <div id="clock" class="clock">loading ...</div>
+      </div>
+
+      <div class="row">
+        <!-- TABLE -->
+        <!-- MORNING -->
+        <table class="table">
+          <tr class="hour-bar">
+            <td class="hour text-right">9:00 AM</td>
+            <td><textarea class="hour-9" disabled></textarea></td>
+            <td class="edit-btn text-center edit-9" onclick="edit(9)">✏️</td>
+          </tr>
+          <tr class="hour-bar">
+            <td class="hour text-right">10:00 AM</td>
+            <td><textarea class="hour-10" disabled></textarea></td></td>
+            <td class="edit-btn text-center edit-10" onclick="edit(10)">✏️</td>
+          </tr>
+          <tr class="hour-bar">
+            <td class="hour text-right">11:00 AM</td>
+            <td><textarea class="hour-11" disabled></textarea></td></td>
+            <td class="edit-btn text-center edit-11" onclick="edit(11)">✏️</td>
+          </tr>
+          <!-- LUNCH -->
+          <tr class="hour-bar">
+            <td class="hour text-right">12:00 PM</td>
+            <td><textarea class="hour-12" disabled></textarea></td></td>
+            <td class="edit-btn text-center edit-12" onclick="edit(12)">✏️</td>
+          </tr>
+          <!-- AFTERNOONG -->
+          <tr class="hour-bar">
+            <td class="hour text-right">1:00 PM</td>
+            <td><textarea class="hour-13" disabled></textarea></td></td>
+            <td class="edit-btn text-center edit-13" onclick="edit(13)">✏️</td>
+          </tr>
+          <tr class="hour-bar">
+            <td class="hour text-right">2:00 PM</td>
+            <td><textarea class="hour-14" disabled></textarea></td></td>
+            <td class="edit-btn text-center edit-14" onclick="edit(14)">✏️</td>
+          </tr>
+          <tr class="hour-bar">
+            <td class="hour text-right">3:00 PM</td>
+            <td><textarea class="hour-15" disabled></textarea></td></td>
+            <td class="edit-btn text-center edit-15" onclick="edit(15)">✏️</td>
+          </tr>
+          <tr class="hour-bar">
+            <td class="hour text-right">4:00 PM</td>
+            <td><textarea class="hour-16" disabled></textarea></td></td>
+            <td class="edit-btn text-center edit-16" onclick="edit(16)">✏️</td>
+          </tr>
+          <tr class="hour-bar">
+            <td class="hour text-right">5:00 PM</td>
+            <td><textarea class="hour-17" disabled></textarea></td></td>
+            <td class="edit-btn text-center edit-17" onclick="edit(17)">✏️</td>
+          </tr>
+        </table>
+        <!-- TABLE END -->
+      </div>
+
+    </div>
+<script src="script.js"></script>
+  </body>
+</html>

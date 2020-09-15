@@ -1,0 +1,31 @@
+body {
+  font-size: 1.8em;
+}
+hr {
+  width: 100%;
+}
+
+#container {
+  align-self: center;
+}
+#questions {
+   font-size: 1.6em;
+   display: none;
+   width: 100%;
+}
+#highscore-board {
+  display: none;
+}
+#highscore {
+  display: none;
+}
+#title {
+  width: 100%;
+}
+#time {
+  font-size: 1.8em;
+  padding-right: 10px;
+}
+#result {
+  font-size: 1.8em;
+}

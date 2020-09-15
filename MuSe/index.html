@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MusE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="public/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-git.min.js"></script>
+</head>
+
+<body>
+  <!-- NAV MENU -->
+  <nav class="navbar is-primary is-active" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu" id="navmenu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">Home</a>
+        <a href="public/members.html" class="navbar-item">My Profile</a>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <a href="public/login.html" class="navbar-item">Login</a>
+      <a href="public/signup.html" class="navbar-item">Register</a>
+    </div>
+  </nav>
+
+  <!-- LOGO & SEARCH -->
+  <div class="notification is-danger is-light">
+    <button class="delete"></button>
+    Search input cannot be empty !
+  </div>
+  <div class="notification is-danger is-light">
+    <button class="delete"></button>
+    You must login to view profile !
+  </div>
+
+  <nav class="level">
+    <div class="level-item has-text-centered">
+      <div>
+        <img name="museBtn" src="public/muselogo2.png" width="200" height="200" alt="muse logo" id="logo">
+      </div>
+    </div>
+  </nav>
+
+  <nav class="level">
+    <div class="level-item">
+      <div class="field">
+        <div class="control has-icons-left">
+          <input id="search-input" class="input is-large" style="width: 300px; font-size: 17px" type="text"
+            placeholder="Search for lyrics, songs, artist...">
+          <span id="search-icon" class="icon is-small is-left" style="height: 45px; width: 45px">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="level">
+    <div class="level-item">
+      <div class="buttons">
+        <button class="button is-primary" id="searchBtn">Search</button>
+      </div>
+    </div>
+  </nav>
+  <!-- TOP 10 -->
+  <div class="columns is-mobile is-centered" id="topSongs">
+    <div class="column is-half billBdr">
+      <p class="bd-notification is-primary has-text-centered is-centered" id="top10">
+        <strong style="color: #00d1b2; font-size: 2.5rem;" class="title">Billboard Top 10</strong>
+      </p>
+    </div>
+  </div>
+
+  <nav class="container">
+    <div class="tile is-ancestor">
+
+      <!-- RESULTS -->
+      <div class="tile is-12 is-parent">
+        <div class="tile is-12 is-parent is-child box" id="results">
+        </div>
+      </div>
+    </div>
+
+    <div class="tile is-ancestor">
+      <!-- LEFT PANELS -->
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child">
+          <div class="tile box" id="songTitle">
+            <p class="title name"></p>
+            <hr>
+            <p class="artist"></p>
+            </p>
+            <p class="album"></p>
+          </div>
+          <div class="tile box" id="media">
+            <p class="title">Media</p>
+            <p><a target="_blank" id="youtube"><i class="fab fa-youtube"></i> Youtube</a></p>
+            <p><a target="_blank" id="spotify"><i class="fab fa-spotify"></i> Spotify</a></p>
+            <p><a target="_blank" id="soundcloud"><i class="fab fa-soundcloud"></i> Soundcloud</a></p>
+          </div>
+        </div>
+
+      </div>
+      <!-- LYRICS -->
+      <div class="tile is-parent">
+        <div class="tile is-child box" id="lyrics" style="white-space: pre-line">
+          <p class="title">Lyrics</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <a href="#">Muse® </a> Copyright © 2020 XxBoomer
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="public/script.js"> </script>
+</body>
+
+</html>

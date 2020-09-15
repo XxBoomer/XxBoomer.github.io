@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-git.min.js"></script>
+</head>
+
+<body>
+  <!-- NAV MENU -->
+  <nav class="navbar is-primary is-active" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu" id="navmenu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">Home</a>
+        <a href="members.html" class="navbar-item">My Profile</a>
+      </div>
+    </div>
+  </nav>
+  <div class="notification is-danger is-light">
+    <button class="delete"></button>
+    You must login to view profile !
+  </div>
+
+  <!-- REGISTER FORM -->
+  <div class="section login-form">
+    <div class="level-item">
+      <div class="section regBord">
+        <form class="signup formBdr">
+          <h2 class="level-item title">Register</h2>
+          <div class="tile is-ancestor">
+            <!-- FIRST NAME -->
+            <div class="tile is-parent">
+              <div class="form-group">
+                <label class="level-left">First Name*</label>
+                <input type="firstName" class="form-control input is-primary subtitle" id="firstName-input"
+                  required="required">
+              </div>
+            </div>
+            <!-- LAST NAME -->
+            <div class="tile is-parent">
+              <div class="form-group">
+                <label class="level-left">Last Name*</label>
+                <input type="lastName" class="form-control input is-primary subtitle" id="lastName-input"
+                  required="required">
+              </div>
+            </div>
+          </div>
+          <!-- EMAIL -->
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <div class="form-group">
+                <label class="level-left">Email*</label>
+                <input type="email" class="form-control input is-primary subtitle" id="email-input" required="required">
+              </div>
+            </div>
+            <!-- PASSWORD -->
+            <div class="tile is-parent">
+              <div class="form-group">
+                <label class="level-left">Password*</label>
+                <input type="password" class="form-control input is-primary subtitle" id="password-input"
+                  required="required">
+              </div>
+            </div>
+          </div>
+          <!-- USER BIO -->
+          <div class="field">
+            <div class="control">
+              <label class="level-left">Biography:</label>
+              <textarea class="textarea is-primary" type="bio" id="bio-input" placeholder="Optional"></textarea>
+            </div>
+          </div>
+
+          <!-- ERROR -->
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+          <button type="submit" class="btn button is-primary level-item is-medium is-rounded is-fullwidth"
+            id="registerBtn" style="width: 50%; margin-left: 125px">Sign
+            Up
+          </button>
+        </form>
+        <br />
+        <p class="level-item subtitle" style="margin-top: -20px">Have an account?<a class="formLink"
+            href="login.html">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <a href="#">Muse® </a> Copyright © 2020 XxBoomer
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/signup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-git.min.js"></script>
+</head>
+
+<body>
+  <!-- NAV MENU -->
+  <nav class="navbar is-primary is-active" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu" id="navmenu">
+      <div class="navbar-start">
+        <a href="https://xxboomer.github.io/MuSe/" class="navbar-item">Home</a>
+        <a href="#" class="navbar-item histBtn">View History</a>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <a href="#" class="navbar-item pwBtn">Change Password</a>
+      <a href="https://xxboomer.github.io/MuSe/" class="navbar-item">Logout</a>
+    </div>
+  </nav>
+
+  <!-- WELCOME -->
+  <div class="section" id="memberPage">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-4 is-vertical is-parent">
+          <div class="tile is-child box">
+            <h2 class="title is-2 has-text-info">Hello! <br><span class="member-name has-text-primary"></span></h2>
+            <hr class="hr">
+            <h2 class="subtitle">Hôm Nay Là Ngày <span class="today-date has-text-primary"></span></h2>
+          </div>
+          <div class="tile is-child box">
+            <h2 class="subtitle">Tiểu sử: <span class="user-bio has-text-info"></span></h2>
+          </div>
+        </div>
+        <div class="tile is-parent feedBdr notification is-primary">
+          <div class="tile is-child box">
+            <p class="title is-2 level-item has-text-primary">Music Feed</p>
+            <iframe src="https://open.spotify.com/embed/playlist/1FdsSsjTQkjt1BYrWHOuLu" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW HISTORY -->
+  <div class="section" id="searchHist">
+    <div class="container">
+      <div class="box">
+        <h2 class="title level-item has-text-primary">Search History</h2>
+        <div class="box searchResults">Results
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHANGE PASSWORD -->
+  <div class="section login-form" id="pwChange">
+    <div class="level-item">
+      <div class="section">
+        <form class="signup formBdr">
+          <h2 class="level-item title"></h2>
+          <div class="form-group">
+            <label class="level-item" for="exampleInputPassword1">New Password</label>
+            <input type="password" class="form-control input is-primary subtitle" id="password-input-1"
+              placeholder="Password" required="required">
+          </div>
+          <div class="form-group">
+            <label class="level-item" for="exampleInputPassword1">Verify Password</label>
+            <input type="password" class="form-control input is-primary subtitle" id="password-input-2"
+              placeholder="Password" required="required">
+          </div>
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+          <button type="submit" class="btn button is-primary level-item is-medium is-rounded is-fullwidth">Save
+            Changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <a href="#">Muse® </a> Copyright © 2020 XxBoomer
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+</body>
+
+</html>

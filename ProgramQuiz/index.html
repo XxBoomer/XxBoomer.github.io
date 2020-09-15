@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Programming Quiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="questions.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="row">
+        <div class="col-sm-4 text-left">
+          <p id="view-highscore">View Highscore</p>
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-4 text-right">
+          <p id="time">0</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+          <!-- START SCREEN  -->
+          <div id="start-screen" class="text-center">
+            <h2>Coding Quiz Challenge</h2>
+            <button id="start" type="button" class="btn btn-primary">Start Quiz</button>
+          </div>
+
+          <!-- QUESTION SCREEN  -->
+          <div id="questions">
+            <div id="title"></div><hr>
+            <div id="choices">
+              a) <button id="choice-0" type="button" class="btn btn-primary choices" value="1"></button><br>
+              b) <button id="choice-1" type="button" class="btn btn-primary choices" value="2"></button><br>
+              c) <button id="choice-2" type="button" class="btn btn-primary choices" value="3"></button><br>
+              d) <button id="choice-3" type="button" class="btn btn-primary choices" value="4"></button><br>
+            </div>
+          </div>
+          <div id="result"></div>
+
+          <!-- HIGHSCORE ENTER -->
+          <div id="highscore">
+            <h2>All Done !</h2>
+            Your final score is <p id="point"></p>
+            Your Initials: <input type="text" id="initials"></input>
+            <button id="submit" type="button" class="btn btn-primary">Submit</button>
+          </div>
+
+          <!-- HIGHSCORE BOARD -->
+          <div id="highscore-board">
+            <h1>Highscore</h1>
+            <table class="table text-center" id="board">
+              <tr>
+                <th>Initials</th>
+                <th>Score</th>
+              </tr>
+            </table>
+            <a href="index.html"><button type="button" class="btn btn-primary">Go Back</button></a>
+            <button id="clear-highscore" type="button" class="btn btn-primary">Clear Highscore</button>
+          </div>
+        </div>
+        <div class="col-sm-3">
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>

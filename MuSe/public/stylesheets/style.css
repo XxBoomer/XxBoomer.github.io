@@ -1,0 +1,33 @@
+html {
+  background-color: #00dbdb;
+  background-image: url("cartographer.png");
+  background-repeat: repeat-y repeat-x;
+  scroll-behavior: smooth;
+}
+
+#logo {
+  padding-top: 50px;
+}
+
+#results, #songTitle, #media, #lyrics, .notification {
+  display: none;
+}
+
+.results {
+  background-color: #55b8bb;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.results:hover {
+  background-color: cadetblue;
+}
+
+strong {
+  color: white;
+}
+
+form.signup,
+form.login {
+  margin-top: 50px;
+}
