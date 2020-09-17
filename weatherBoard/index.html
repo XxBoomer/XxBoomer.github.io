@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid topheader">
+        <div class="container">
+            <h1 class="display-4 heading">Bản Thời Tiết</h1>
+            <p class="lead">Thời Tiết Của Bạn!</p>
+        </div>
+    </div>
+    <div class="container-fluid mainbackground">
+        <div class="row">
+            <div class="col-4">
+                <div class="input-group mb-3">
+                    <nav class="navbar navbar-light bg-light">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" id="cityname" type="search"
+                                placeholder="Nhập tên thành phố" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" id="searchbtn"
+                                type="submit">Search</button>
+                        </form>
+                    </nav>
+
+                </div>
+
+                <div class="list-group location-list">
+
+                </div>
+            </div>
+            <div class="col-8 rightbackground">
+                <div class="row">
+                    <div class="col-12 current">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h1 class="citynamedisplay"> </h1> <img id="wicon" src="" alt="Weather icon">
+                            </div>
+                            <p><strong>Nhiệt độ:</strong> <span class="temp"></span> </p>
+                            <p><strong>Độ ẩm:</strong> <span class="humidity"></span></p>
+                            <p><strong>Tốc độ gió:</strong> <span class="wind"></span></p>
+                            <p><strong>Chỉ số UV:</strong> <span class="uvindex"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row fiveday">
+                    <h1> Dự Báo 5 Ngày Sau </h1>
+                    <div class="row display">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

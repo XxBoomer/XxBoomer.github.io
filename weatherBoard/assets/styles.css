@@ -1,0 +1,57 @@
+html {
+    background: url("./images/background-images-love-amazing-nice-weather-sky-romance-high-resolution-widescreen-1920x1080.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    background-color: transparent;
+}
+
+.jumbotron {
+    margin-top: 30px;
+    height: 450;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 0px 15px 0px black;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.forecast {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.current {
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 0px 15px 0px black;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.fiveday {
+    margin-top: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 0px 15px 0px black;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 20px;
+    color: white
+}
+
+.tablebackground {
+    background-color: white;
+}
