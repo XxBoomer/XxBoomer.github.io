@@ -106,9 +106,9 @@ body{
 .quiz-box .option-container{}
 .quiz-box .option-container .option{
 	background-color: #cccccc;
-	padding: 15px;
+	padding: 13px 15px;
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 22px;
 	color: #000000;
 	border-radius: 5px;
 	margin-bottom: 10px;
@@ -195,14 +195,14 @@ body{
 }
 .quiz-box .answers-indicator div.correct{
 	background-color: green;
-	background-image: url("../img/correct.png");
+	background-image: url("C:/Users/Khiem/Desktop/QuizGame/img/correct.png");
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .quiz-box .answers-indicator div.wrong{
 	background-color: red;
-	background-image: url("../img/wrong.png");
+	background-image: url("C:/Users/Khiem/Desktop/QuizGame/img/wrong.png");
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
