@@ -195,14 +195,14 @@ body{
 }
 .quiz-box .answers-indicator div.correct{
 	background-color: green;
-	background-image: url("C:/Users/Khiem/Desktop/QuizGame/img/correct.png");
+	background-image: url("../img/correct.png");
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .quiz-box .answers-indicator div.wrong{
 	background-color: red;
-	background-image: url("C:/Users/Khiem/Desktop/QuizGame/img/wrong.png");
+	background-image: url("../img/wrong.png");
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
