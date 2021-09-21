@@ -19,7 +19,7 @@
         </div>
         <br>
         <div>
-            <input type="range" min="8" max="128" value="64" class="slider" id="numberRange">
+            <input type="range" min="8" max="15" value="8" class="slider" id="numberRange">
             <span id='numberSpan'>64</span>
         </div>
         <br>
@@ -57,7 +57,7 @@
         }
         function generatePassword() {
             var length = pasNum,
-                characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
                 password = "";
             for (var i = 0, n = characters.length; i < length; ++i) {
                 password += characters.charAt(Math.floor(Math.random() * n));
