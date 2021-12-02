@@ -1,0 +1,82 @@
+<head>
+   <title>2FA Authentication - Two Factor Authenticator - 2FA Hotmail Outlook - 2FA Authentication Code - 2FA Sercet</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <link rel="shortcut icon" href="https://www.sellallmail.com/images/favicon.png">
+   <script src="./jquery.min.js"></script>
+   <link rel='stylesheet' href="./bootstrap.min.css" />
+   <center> <a href="https://sellallmail.com/2fa/other/" class="btn btn-primary"> 2FA Facebook Other - 2FA các dịch vụ khác - 2FA Authentication - 2FA Sercet </a></center>
+</head>
+<div class="container">
+   <div class="row">
+      <b> Nhập mã 2FA Hotmail Outlook - 2FA Authentication - 2FA Sercet - Sau 30s lấy lại mã mới</b>
+      <textarea class="form-control" id="listToken" placeholder="mailmmosellallmail" rows="6"></textarea>
+   </div>
+   <div class="row">
+      <div class="text-left">
+         <a class="btn btn-primary" id="submit">
+         Get code 2FA
+         </a>
+      </div>
+   </div>
+   <script>
+      function copycode2fa() {
+      var copyText = document.getElementById("output");
+      copyText.select();
+      copyText.setSelectionRange(0, 6)
+      document.execCommand("Copy");
+      }
+   </script>  
+   <div class="row">
+      <b>Mã để nhập sang bên Hotmail Outlook - 2FA Authentication Code - 2FA Code - Mã hết hạn sau 30 giây</b>
+      <textarea class="form-control" id="output" placeholder="2FA Code" rows="6"></textarea>
+   </div>
+   <div class="row">
+      <div class="text-left">
+         <a class="btn btn-primary" onclick="copycode2fa()"><small>Sao chép Code 2Fa </small>
+         </a>
+      </div>
+   </div>
+   <script>
+      function code2fa() {
+      var copyText = document.getElementById("output1");
+      copyText.select();
+      copyText.setSelectionRange(0, 99)
+      document.execCommand("Copy");
+      }
+   </script>  
+   <div class="row">
+      <b>FULL Key và Mã xác minh bước 2 Hotmail Outlook - 2FA Authentication Code - 2FA Code </b>
+      <textarea class="form-control" id="output1" placeholder="KEY|2FA Code" rows="6"></textarea>
+   </div>
+   <div class="row">
+      <div class="text-left">
+         <a class="btn btn-primary" onclick="code2fa()"><small>Sao chép full Code 2Fa </small>
+         </a>
+      </div>
+   </div>
+</div>
+
+<script>
+   $( "#submit" ).click(function() {
+   var sellallmail = $.trim($("#listToken").val()).split('\n');
+var value_data='';var value_code='';
+   $.each(sellallmail, function (mail, token) {
+       var cur_sellallmail = token.split('|');
+        var mmo_mail = cur_sellallmail.length - 1;
+        $.ajax({
+           url: "./get2fa.php?key="+cur_sellallmail[mmo_mail].replace(/\ /g, ''),
+           type: "POST",
+           dataType: "json",
+           success: function(datas) {
+               console.log(datas);
+               value_data=value_data+datas.key+'|'+datas.code+'\n';
+               value_code=value_code+datas.code+'\n';
+             $("#output1").val(value_data);
+             $("#output").val(value_code);
+           }
+       });
+     
+   });
+       
+   });
+</script>   
